@@ -6,10 +6,12 @@ player1points = []
 
 def Josh_function2():
     print(sum(player2points))
+    Josh_function2()
 
 
 def Josh_function1():
     print(sum(player1points))
+    Josh_function1()
 
 
 print("In order to determine who goes first type a number either 0 or 1")
@@ -64,7 +66,7 @@ q3 = q3 + "3 - $700 \n"
 q3 = q3 + "4 - $143 \n"
 q3 = q3 + "write down your number below \n"
 
-q4 = "Here is the fourth question"
+q4 = "Here is the fourth question \n"
 q4 = q4 + "Question 4 - About how much money does the U.S. spend on healthcare per year? \n"
 q4 = q4 + "Possible answers \n"
 q4 = q4 + "1 - $3.8 billion dollars \n"
@@ -171,6 +173,12 @@ for index in range(len(questions)):
 
 finalscore1 = (sum(player1points))
 finalscore2 = (sum(player2points))
+
+print("Player 1 has " + str(finalscore1) + " points")
+print("Player 2 has " + str(finalscore2) + " points")
+Josh_function2()
+Josh_function1()
+
 
 if finalscore1 > finalscore2:
     print("Player1 won")
