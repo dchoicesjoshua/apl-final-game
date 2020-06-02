@@ -1,3 +1,7 @@
+######################################################################
+# Joshua JHUAPL Step Class Project for 2020 Sprint Python I Class
+######################################################################
+
 from random import randrange
 
 player2points = []
